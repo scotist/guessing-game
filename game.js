@@ -61,4 +61,12 @@ if (q4 < 4) {
   alert('I don\'t know if it was really THAT good ...');
 }
 
+var q5 = prompt('Do you think computer programs have feelings too? Yes or No').toLowerCase();
+console.log('The user answered ' + q5);
+if (q5 === 'no' || q5 === 'n') {
+  alert('You know, that really hurts my feeling.');
+} else if (q5 === 'yes' || q5 === 'y') {
+  alert('I really appreciate that.');
+}
+
 alert('Thanks for playing!');
