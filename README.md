@@ -1,2 +1,3 @@
 # guessing-game
-Guessing game, make with HTML and JavaScript
+Michael Sullivan
+This is a guessing game, made with HTML and JavaScript.
