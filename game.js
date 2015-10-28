@@ -60,3 +60,5 @@ if (Q4 < 4) {
 } else {
   alert('I don\'t know if it was really THAT good ...');
 }
+
+alert('Thanks for playing!');
