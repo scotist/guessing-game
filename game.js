@@ -17,7 +17,6 @@ if (q1 === 'yes' || q1 === 'y') {
 } else {
   alert('You didn\'t enter either yes or no!');
   console.log('The user gave an invalid response: ' + q1);
-  var ir = false;
 }
 
 var q2 = prompt('Do I pass the Turing Test?').toLowerCase();
