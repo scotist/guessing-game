@@ -2,7 +2,7 @@ var name = prompt('What is your name?');
 console.log('The user gave the name ' + name);
 alert('Good morning, ' + name + ', I hope you\'re having a good time!');
 alert('Now we will play a game. Please answer yes or no.');
-var corQuest = 0
+var corQuest = 0;
 
 var q1 = prompt('Am I intelligent?').toLowerCase();
 alert('You answered ' + q1 + '...');
@@ -17,6 +17,7 @@ if (q1 === 'yes' || q1 === 'y') {
 } else {
   alert('You didn\'t enter either yes or no!');
   console.log('The user gave an invalid response: ' + q1);
+  var ir = false;
 }
 
 var q2 = prompt('Do I pass the Turing Test?').toLowerCase();
@@ -57,8 +58,10 @@ if (q4 < 4) {
   alert('Aww, surely it was better than that!');
 } else if (q4 == 5){
   alert('Yeah, that sounds about right.');
-} else {
+} else if (q4 > 5){
   alert('I don\'t know if it was really THAT good ...');
+} else {
+  alert('That\'s not an answer!');
 }
 
 var q5 = prompt('Do you think computer programs have feelings too? Yes or No').toLowerCase();
