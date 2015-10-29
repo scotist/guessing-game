@@ -78,8 +78,10 @@ var q6 = prompt('How many feelings, though?');
 console.log('The user answered ' + q6);
 if (q6 == 1) {
   alert('That is correct! Computer programs have exactly one feeling!');
-} else {
+} else if (q6 > 1){
   alert('Thanks for the vote of confidence, but we\'re not really that complicated.')
+} else {
+  alert('That\'s not an answer!');
 }
 
 alert('Thanks for playing!');
