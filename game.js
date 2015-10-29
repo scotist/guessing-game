@@ -70,6 +70,8 @@ if (q5 === 'no' || q5 === 'n') {
   alert('You know, that really hurts my feeling.');
 } else if (q5 === 'yes' || q5 === 'y') {
   alert('I really appreciate that.');
+} else {
+  alert('That\'s not an answer!');
 }
 
 var q6 = prompt('How many feelings, though?');
