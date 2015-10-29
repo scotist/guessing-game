@@ -70,7 +70,7 @@ result.innerHTML = 'Final Result: You got ' + corQuest + ' out of 3 right!';
 question4 = function(){
   var q4 = prompt('On a scale of 1-10, how much did you enjoy this quiz?');
   console.log('The user answered ' + q4);
- var answer = document.getElementById('answer4');
+  var answer = document.getElementById('answer4');
   if (q4 < 4) {
     answer.innerHTML = 'Aww, surely it was better than that!';
   } else if (q4 == 5){
