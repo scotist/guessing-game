@@ -20,6 +20,7 @@ question1 = function(){
   } else {
     answer.innerHTML = 'You didn\'t enter either yes or no!';
     console.log('The user gave an invalid response: ' + q1);
+    question1();
   }
 }
 question1();
@@ -40,6 +41,7 @@ question2 = function(){
   } else {
     answer.innerHTML = 'You didn\'t enter either yes or no!';
     console.log('The user gave an invalid response: ' + q2);
+    question2();
   }
 }
 question2();
@@ -59,6 +61,7 @@ question3 = function(){
   } else {
     answer.innerHTML = 'You didn\'t enter either yes or no!';
     console.log('The user gave an invalid response: ' + q3);
+    question3();
   }
 }
 question3();
@@ -79,6 +82,7 @@ question4 = function(){
     answer.innerHTML = 'I don\'t know if it was really THAT good ...';
   } else {
     answer.innerHTML = 'That\'s not an answer!';
+    question4();
   }
 }
 question4();
@@ -93,6 +97,7 @@ question5 = function(){
     answer.innerHTML = 'I really appreciate that.';
   } else {
     answer.innerHTML = 'That\'s not an answer!';
+    question5();
   }
 }
 question5();
@@ -107,6 +112,7 @@ question6 = function(){
     answer.innerHTML = 'Thanks for the vote of confidence, but we\'re not really that complicated.';
   } else {
     answer.innerHTML = 'That\'s not an answer!';
+    question6();
   }
 }
 question6();
