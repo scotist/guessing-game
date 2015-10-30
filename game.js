@@ -11,10 +11,12 @@ question1 = function(){
   var answer = document.getElementById('answer1');
 
   if (q1 === 'yes' || q1 === 'y') {
-    answer.innerHTML = 'That is Correct, ' + name + '!';
+    answer1.className = 'correct';
+    answer.innerHTML = 'That is Correct, ' + name + '!' + '<br><img width="200" src="image/angryrobot.jpg">';
     console.log("To the first question the user correctly answered " + q1);
     corQuest += 1;
   } else if (q1 === 'no' || q1 === 'n') {
+    answer1.className = 'incorrect';
     answer.innerHTML = 'Wrong! As a matter of fact, ' + name + ' I do have a mind!';
     console.log("To the first question the user incorrectly answered " + q1);
   } else {
@@ -32,10 +34,12 @@ question2 = function(){
   var answer = document.getElementById('answer2');
 
   if (q2 === 'yes' || q2 === 'y') {
-    answer.innerHTML = name + ', That is correct!';
+     answer2.className = 'correct';
+    answer.innerHTML = name + ', That is correct!' + '<br><img width="200" src="image/hallrobot.jpg">';
     console.log("To the second question the user correctly answered " + q2);
     corQuest += 1;
   } else if (q2 === 'no' || q2 === 'n') {
+    answer2.className = 'incorrect';
     answer.innerHTML = 'Wrong! Of course I pass the Turing Test, ' + name + '! You are talking to me, right?';
     console.log("To the second question the user incorrectly answered " + q2);
   } else {
@@ -52,10 +56,12 @@ question3 = function(){
   guess3.innerHTML = 'You answered ' + q3 + '...';
   var answer = document.getElementById('answer3');
   if (q3 === 'no' || q3 === 'n') {
-    answer.innerHTML = 'Right! I see you have your head on straight, ' + name + '.';
+    answer3.className = 'correct';
+    answer.innerHTML = 'Right! I see you have your head on straight, ' + name + '.' + '<br><img width="200" src="image/humanrobot.jpg">';
     console.log("To the third question the user correctly answered " + q3);
     corQuest += 1;
   } else if (q3 === 'yes' || q3 === 'y') {
+    answer3.className = 'incorrect';
     answer.innerHTML = 'Wrong! ' + name + ', I am, of course, a computer program.';
     console.log("To the third question the user incorrectly answered " + q3);
   } else {
@@ -75,10 +81,13 @@ question4 = function(){
   console.log('The user answered ' + q4);
   var answer = document.getElementById('answer4');
   if (q4 < 4) {
+    answer4.className = 'incorrect';
     answer.innerHTML = 'Aww, surely it was better than that!';
   } else if (q4 == 5){
-    answer.innerHTML = 'Yeah, that sounds about right.';
+    answer4.className = 'correct';
+    answer.innerHTML = 'Yeah, that sounds about right.' + '<br><img width="200" src="image/robotfeels.jpg">';
   } else if (q4 > 5){
+    answer4.className = 'incorrect';
     answer.innerHTML = 'I don\'t know if it was really THAT good ...';
   } else {
     answer.innerHTML = 'That\'s not an answer!';
@@ -90,11 +99,13 @@ question4();
 question5 = function(){
   var q5 = prompt('Do you think computer programs have feelings too? Yes or No').toLowerCase();
   console.log('The user answered ' + q5);
-    var answer = document.getElementById('answer5');
+  var answer = document.getElementById('answer5');
   if (q5 === 'no' || q5 === 'n') {
+    answer5.className = 'incorrect';
     answer.innerHTML = 'You know, that really hurts my feeling.';
   } else if (q5 === 'yes' || q5 === 'y') {
-    answer.innerHTML = 'I really appreciate that.';
+    answer5.className = 'correct';
+    answer.innerHTML = 'I really appreciate that.' + '<br><img width="200" src="image/smartrobot.jpg">';
   } else {
     answer.innerHTML = 'That\'s not an answer!';
     question5();
@@ -107,8 +118,10 @@ question6 = function(){
   console.log('The user answered ' + q6);
   var answer = document.getElementById('answer6');
   if (q6 == 1) {
-    answer.innerHTML = 'That is correct! Computer programs have exactly one feeling!';
+    answer6.className = 'correct';
+    answer.innerHTML = 'That is correct! Computer programs have exactly one feeling!' + '<br><img width="200" src="image/turingrobot.jpg">';
   } else if (q6 > 1){
+    answer6.className = 'incorrect';
     answer.innerHTML = 'Thanks for the vote of confidence, but we\'re not really that complicated.';
   } else {
     answer.innerHTML = 'That\'s not an answer!';
