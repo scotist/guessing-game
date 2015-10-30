@@ -1,0 +1,19 @@
+* {
+	font-style: serif;
+}
+
+body {
+	background-color: gray;
+}
+
+h2 {
+	color: blue;
+}
+
+.correct {
+	color: green;
+}
+
+.incorrect {
+	color: red;
+}
